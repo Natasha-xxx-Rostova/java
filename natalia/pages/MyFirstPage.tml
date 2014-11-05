@@ -1,0 +1,25 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+       
+       
+       
+  <!--     <t:if test="hi">
+       Hello world!!
+       </t:if>
+       
+       <t:eventlink t:event="hi">click me to HI</t:eventlink>
+       
+       <t:loop source="parameters" value="name">
+     	${name} = ${value}<br/>
+       </t:loop>-->
+       <t:form t:id="loginForm" clientvalidation="false">
+       <br/>
+       
+      <t:label for="email">E-mail</t:label>
+      <t:textfield t:id="email" value="email" t:validate="required,regexp"/>
+      <br/>
+      <br/><t:label for="password" value="password">Password</t:label>
+       <t:passwordfield t:id="password"  t:validate="required,minlength=3"/>
+       <t:submit value="Login" t:id="login"/>             
+       </t:form>
+</html>

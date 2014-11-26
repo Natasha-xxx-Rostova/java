@@ -1,0 +1,17 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+       
+       
+       
+       <t:form t:id="loginForm" clientvalidation="false">
+       <t:errors/>
+       <br/>
+       
+      <t:label for="email">E-mail</t:label>
+      <t:textfield t:id="email" value="email" t:validate="required,regexp"/>
+      <br/>
+      <br/><t:label for="password" value="password">Password</t:label>
+       <t:passwordfield t:id="password"  t:validate="required,minlength=3"/>
+       <t:submit value="Login"/>             
+       </t:form>
+</html>
